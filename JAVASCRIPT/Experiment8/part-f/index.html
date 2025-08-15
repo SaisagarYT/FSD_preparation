@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Denominations</title>
+<script>
+var amt = parseInt(prompt("Enter amount:"));
+var notes = [100,50,20,10,5,2,1];
+for(let note of notes){
+    let count = Math.floor(amt / note);
+    if(count > 0){
+        document.write(count + " - " + note + "'s<br>");
+        amt %= note;
+    }
+}
+</script>
+</head>
+<body></body>
+</html>

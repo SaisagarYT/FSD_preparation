@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Loops</title>
+<script>
+var obj = {name:"John", age:25, city:"NY"};
+for(let key in obj){ document.write(key + ": " + obj[key] + "<br>"); }
+var arr = ["Apple", "Banana", "Cherry"];
+arr.forEach(item => document.write(item + "<br>"));
+for(let val of arr){ document.write(val + "<br>"); }
+</script>
+</head>
+<body></body>
+</html>
