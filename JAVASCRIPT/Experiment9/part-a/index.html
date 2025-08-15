@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Functions</title>
+<script>
+function factorial(n){
+    let f=1; for(let i=1;i<=n;i++){ f*=i; } return f;
+}
+function fibonacci(n){
+    let a=0,b=1,seq=[]; for(let i=0;i<n;i++){ seq.push(a); [a,b]=[b,a+b]; } return seq;
+}
+function primes(n){
+    let res=[]; for(let i=2;i<=n;i++){ let p=true; for(let j=2;j<i;j++){ if(i%j==0){p=false;break;} } if(p) res.push(i); } return res;
+}
+function palindrome(n){
+    let str=n.toString(); return str===str.split("").reverse().join("");
+}
+var num = parseInt(prompt("Enter a number:"));
+document.write("Factorial: " + factorial(num) + "<br>");
+document.write("Fibonacci: " + fibonacci(num).join(", ") + "<br>");
+document.write("Primes: " + primes(num).join(", ") + "<br>");
+document.write("Palindrome: " + (palindrome(num) ? "Yes" : "No"));
+</script>
+</head>
+<body></body>
+</html>
