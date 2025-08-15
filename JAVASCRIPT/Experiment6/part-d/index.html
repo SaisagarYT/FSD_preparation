@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voter Check</title>
+<script>
+var name = prompt("Enter your name:");
+var age = parseInt(prompt("Enter your age:"));
+var eligible = (age >= 18) ? "Can Vote" : "Cannot Vote";
+document.write("<table border='1'><tr><th>Name</th><th>Age</th><th>Status</th></tr>");
+document.write("<tr><td>" + name + "</td><td>" + age + "</td><td>" + eligible + "</td></tr></table>");
+</script>
+</head>
+<body></body>
+</html>
